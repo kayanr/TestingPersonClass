@@ -4,8 +4,8 @@ package com.zipcodewilmington.person;
  * If you did ObjectsOne lab, you might recognize this code?
  */
 public class Person {
-    private String name;
-    private int age;
+    private String name = "";
+    private int age = Integer.MAX_VALUE;
 
     public Person() {
     }
@@ -14,6 +14,7 @@ public class Person {
     }
 
     public Person(String name) {
+        this.name = name;
     }
 
     public Person(String name, int age) {
@@ -26,10 +27,10 @@ public class Person {
     }
 
     public String getName() {
-        return null;
+        return this.name;
     }
 
     public Integer getAge() {
-        return null;
+        return this.age;
     }
 }
